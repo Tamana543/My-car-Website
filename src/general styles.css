@@ -1,0 +1,130 @@
+/* 
+---01 TYPOGRAPHY SYSTEM
+- Font size
+10/ 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98 
+
+-Font weights 
+Default: 600
+small:500
+
+
+- Line heights
+Default: 1
+medium:1.2
+
+
+---02 COLORS
+-primary:#555
+-Tints:#36454f, #3f3f3f, #353839,#6d6d6d #585858,
+-Color:#f5f5f5, #f2f3d3,#effffd, #dbdbdb,#888787
+
+---03 SPACING SYSTEM
+2 / 4 / 6 / 12 / 16 / 24 / 32 / 28 / 64 / 80 / 96 / 128 
+*/
+/*************/
+/* MAIN SYSTEM */
+html {
+  font-size: 100%;
+  /* not avoilable in same browsers */
+  /* scroll-behavior: smooth; */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #dbdbdb;
+  background-color: #000;
+}
+*:focus {
+  /* outline: none; */
+  box-shadow: 0 0 10px #807f7f85;
+}
+
+/*************/
+/***********************/
+/* GENRAL REUSASBLE COMPONENT */
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms;
+  letter-spacing: 1.5px;
+}
+.container {
+  max-width: 120rem;
+  margin: 0rem auto;
+  padding: 2rem;
+}
+.grid {
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+}
+.grid--two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--three-col {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid--four-col {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.btn,
+.btn:hover,
+.btn:active {
+  /* if you want to have inside border try this trick */
+  box-shadow: 0 0 3px #585858;
+}
+.first-heading,
+.second-heading,
+.third-head {
+  line-height: 1.2;
+}
+.first-heading {
+  font-size: 2rem;
+}
+.third-head {
+  font: 3rem;
+  text-align: center;
+}
+.hero-btn:link,
+.hero-btn:visited {
+  position: absolute;
+  transform: translate(0%, 40%);
+  background-color: #3f3f3f;
+  color: #dbdbdb;
+}
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #585858;
+  color: #fff;
+}
+.sim-btn:link,
+.sim-btn:visited {
+  position: absolute;
+  transform: translate(100%, 40%);
+  left: 4rem;
+  color: #dbdbdb;
+  background-color: #131212;
+  margin-left: 1rem;
+}
+.cus-heading {
+  padding: 1rem 2rem 2rem 5rem;
+}
+.cus-heading h4 {
+  font-size: 0.7rem;
+  color: #818181;
+}
+.cus-heading h3 {
+  font-size: 2rem;
+}

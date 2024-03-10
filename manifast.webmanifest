@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "images/logo/androwid-192.png",
+      "Type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo/androwid-519.png",
+      "Type": "image/png",
+      "sizes": "519x519"
+    }
+  ]
+}
